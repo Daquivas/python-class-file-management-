@@ -1,0 +1,16 @@
+file_read=open("abc.txt","r")
+print("File in read mode-")
+print(file_read.read())
+file_read.close()
+
+file_write=open("abc.txt","w")
+file_write.write("File in write mode.")
+file_write.write("Hi I am Saadiq & I am 11 years old.")
+#file_write.close()
+file_write=open("abc.txt","r")
+print(file_write.read())
+
+file_append=open("abc.txt","a")
+file_append.write("\n File in append mode.......")
+file_append.write("Hi I am Saadiq & I am 11 years old.")
+file_append.close()
